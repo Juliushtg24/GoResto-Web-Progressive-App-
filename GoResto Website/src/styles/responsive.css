@@ -1,0 +1,161 @@
+@media screen and (max-width: 551px) {
+  .nav__bar {
+    z-index: 10;
+    background-color: black;
+    width: 255px;
+    top: 69px;
+    position: absolute;
+
+    -webkit-transform: translate(-255px, 0);
+    transform: translate(-255px, 0);
+
+    transition: transform 0.3s ease;
+  }
+
+  .nav__bar > .nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .nav__bar > .nav__list > .nav__item {
+    border: 2px solid;
+  }
+
+  .nav__bar > .nav__list > .nav__item > a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .nav__bar > .nav__list > .nav__item:hover {
+    border-color: #892cdc;
+    color: #892cdc;
+  }
+
+  .hero__banner {
+    background-image: url("../../dist/images/hero-image_3-small.jpg");
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__menu {
+    display: visible;
+  }
+
+  .header > .header__inner {
+    flex-basis: 80%;
+  }
+
+  .resto {
+    margin: 0 25px;
+  }
+
+  .resto__detail {
+    box-shadow: none;
+    padding: 5px;
+    margin: 20px 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail__poster {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .detail__desc {
+    font-size: 14px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 552px) {
+  .nav__bar {
+    display: visible;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .header > .header__inner {
+    flex-basis: 8%;
+  }
+
+  .resto {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .resto__detail {
+    margin: 15px auto;
+    grid-template-columns: auto 1fr;
+  }
+
+  .resto__detail .detail__poster {
+    width: 100%;
+  }
+
+  .resto__detail .detail__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .detail__desc {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .review__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .review__form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .nav__bar {
+    visibility: visible;
+  }
+
+  .header > .header__inner {
+    flex-basis: 40%;
+  }
+
+  .resto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .header > .header__inner {
+    flex-basis: 50%;
+  }
+
+  .resto__location {
+    font-size: 19px;
+  }
+
+  .resto__rating {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__banner {
+    min-width: 1000px;
+  }
+  .resto {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
